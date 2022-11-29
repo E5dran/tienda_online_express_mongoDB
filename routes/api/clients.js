@@ -54,17 +54,12 @@ router.delete('/:clientId', async (req, res) => {
 router.delete('/:clientId/product/:productId', async (req, res) => {
     try {
         const { clientId, productId } = req.params;
-
         const client = await Client.findById(clientId);
+        const pos = client.products.indexOf(productId);
 
-        const pos = client.products.map((product) => product._id);
-
-        const cos = pos.indexOf(productId);
-        //client.products.slice(pos, 1);
-
-        //await client.save();
-
-        res.json(cos);
+        client.products.splice(pos, 1);
+        await client.save();
+        res.json({ message: 'Product deleted' });
     } catch (error) {
         res.json({ fatal: error.message });
     }

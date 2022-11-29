@@ -1,3 +1,4 @@
+# Back en render https://tienda-3exl.onrender.com/api/clients
 ###
 GET http://localhost:3000/api/clients
 
@@ -28,4 +29,5 @@ Content-Type: application/json
 DELETE http://localhost:3000/api/clients/6385e76566ffb5eb9ab080f5
 
 ###
-DELETE http://localhost:3000/api/clients/6385e76566ffb5eb9ab080f5/product/6384c11e4271ec9ef464308a
+DELETE http://localhost:3000/api/clients/6385e76566ffb5eb9ab080f5/product/6384c0d04271ec9ef4643088
+

@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/api/clients
+
+###
+GET http://localhost:3000/api/clients/6385f754f0a10d567f61c3bd/product/6384c0d04271ec9ef4643086
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+    "name": "Tommy",
+    "email": "tommy@mail.me",
+    "adress": "c/segovia, 2, 3ºC",
+    "age": 38,
+    "available": true
+}
+
+###
+PUT http://localhost:3000/api/clients/6385e76566ffb5eb9ab080f5
+Content-Type: application/json
+
+{
+    "email": "paquitodelucia@mail.me"
+} 
+
+###
+DELETE http://localhost:3000/api/clients/6385e76566ffb5eb9ab080f5
+
+###
+DELETE http://localhost:3000/api/clients/6385e76566ffb5eb9ab080f5/product/6384c11e4271ec9ef464308a

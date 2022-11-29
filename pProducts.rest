@@ -1,0 +1,46 @@
+###
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/category/oficina
+
+###
+GET http://localhost:3000/api/products/min/800
+
+###
+GET http://localhost:3000/api/products/min/800/max/7000
+
+###
+GET http://localhost:3000/api/products/stock/20
+
+###
+GET http://localhost:3000/api/products/6384c11e4271ec9ef464308a
+
+###
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+
+{
+    "name": "Calzoncillos",
+    "description": "calzoncillos de seda del himalaya",
+    "category": "moda",
+    "price": 60,
+    "available": true,
+    "stock": 10,
+    "image": "NONE"
+}
+
+###
+PUT http://localhost:3000/api/products/
+Content-Type: application/json
+
+{
+    "_id":"6384e6790af8665bb11f3e86",
+    "name": "Calzoncillos con agujeros",
+    "category": "moda",
+    "price": 80,
+    "stock": 5,
+}
